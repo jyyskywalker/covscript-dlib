@@ -4,6 +4,7 @@ import dlib
 var img=new dlib.image
 dlib.load_image(img, context.cmd_args()[1])
 dlib.pyramid_up(img)
+dlib.pyramid_up(img)
 var dets=dlib.frontal_face_detect(img)
 # Detect Face
 if dets.empty()
